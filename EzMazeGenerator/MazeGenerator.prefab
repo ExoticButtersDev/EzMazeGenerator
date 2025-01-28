@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3398585983245401422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6075652231990798718}
+  - component: {fileID: 3807228780435548542}
+  m_Layer: 0
+  m_Name: MazeGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6075652231990798718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398585983245401422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3807228780435548542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398585983245401422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd139d429ac0e954f8b4b9b8b0868b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mazeScale: {x: 50, y: 2, z: 50}
+  structures:
+  - {fileID: 7700073098761316237, guid: 09d1e11b9819d744ab82ccec82c4dfe4, type: 3}
+  - {fileID: 3358782634459713768, guid: a19008e5207ed2b4c801986e8ee6a4e7, type: 3}
+  - {fileID: 1069605512346241247, guid: 927198381be32cd4db1ff569bdaecfa0, type: 3}
+  - {fileID: 7700073098761316237, guid: 272e93dbe5aaa044bbc6b050846c3c31, type: 3}
+  lightPrefab: {fileID: 2955375944782125305, guid: 74bc8d48df35ec54da30724303be97c2, type: 3}
+  wallMaterial: {fileID: 2100000, guid: f63fdd06470fbed46b1b09df31c5e957, type: 2}
+  groundMaterial: {fileID: 2100000, guid: 4d0300267dfedae4e8e3d6f4f41a3b89, type: 2}
+  roofMaterial: {fileID: 2100000, guid: abfebfb17186fde489735710cbc7f883, type: 2}
+  wallLength: 2
+  wallSpawnChance: 4
+  structureSpawnChance: 1
+  lightType: 3
+  intensity: 3
+  range: 5
+  color: {r: 1, g: 1, b: 1, a: 1}
+  spawnReflectionProbes: 0
+  probeResolution: 1024
+  boxProjection: 1
